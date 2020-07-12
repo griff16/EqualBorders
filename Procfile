@@ -1,0 +1,1 @@
+web: gunicorn sumaryDashboard.wsgi --log-file - 
