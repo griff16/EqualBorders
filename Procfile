@@ -1,1 +1,1 @@
-web: gunicorn sumaryDashboard.wsgi --log-file - 
+web: gunicorn equalBorder.wsgi --log-file -
