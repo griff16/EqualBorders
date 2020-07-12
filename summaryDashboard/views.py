@@ -1,6 +1,5 @@
 from django.http import HttpResponse
+from django.views.generic import TemplateView
 
-
-# Create your views here.
-def summaryDashboardView(request):
-    return HttpResponse('Hello this is EqualBorder.com')
+class summaryDashboardView(TemplateView):
+    template_name = "summaryDashboard.html"
