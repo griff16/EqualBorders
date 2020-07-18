@@ -40,29 +40,17 @@
             <div class="card blue-grey darken-1 z-depth-4 scroll-card">
                 <div class="card-content white-text">
                     <span class="card-title">Graph</span>
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.
-                    
-                        I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.
-                        this is the end
-                    
-                    </p>
+
+                    <!-- added mapbox -->
+                    <div id='map' style='width: 600px; height: 200px;'></div>
+                    <script>
+                        mapboxgl.accessToken = 'pk.eyJ1IjoiZ3JpZmZjaG8iLCJhIjoiY2sxMzY1a3U3MDVxczNkcWp4eDJ4N2lyMyJ9.DtH7gHndwTLBuxXNnMpSig';
+                        var map = new mapboxgl.Map({
+                            container: 'map',
+                            style: 'mapbox://styles/mapbox/streets-v11'
+                        });
+                    </script>
+
                 </div>
                 <div class="card-action">
                     <a href="#">This is a link</a>
