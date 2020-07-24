@@ -12,9 +12,11 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-
+    <!-- mapbox api -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+    
+    <!-- google adsense -->
     <script data-ad-client="ca-pub-4687616113437336" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
 
 </head>
@@ -23,17 +25,17 @@
 
     <nav class="indigo darken-4" role="navigation">
         <div class="nav-wrapper container">
-            <a id="logo-container" href="#" class="brand-logo">Logo of Equal Borders</a>
+            <a id="logo-container" href="{% url 'sumDash' %}" class="brand-logo">Logo of Equal Borders</a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Schools</a></li>
-                <li><a href="#">News</a></li>
+                <li><a href="{% url 'sumDashAbout' %}">About</a></li>
+                <li><a href="{% url 'sumDashSchools' %}">Schools</a></li>
+                <li><a href="{% url 'sumDashNews' %}">News</a></li>
             </ul>
 
             <ul id="nav-mobile" class="sidenav">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Schools</a></li>
-                <li><a href="#">News</a></li>
+                <li><a href="{% url 'sumDashAbout' %}">About</a></li>
+                <li><a href="{% url 'sumDashSchools' %}">Schools</a></li>
+                <li><a href="{% url 'sumDashNews' %}">News</a></li>
             </ul>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger">
                 <i class="material-icons">Menu</i></a>
