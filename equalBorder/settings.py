@@ -82,8 +82,8 @@ DATABASES = {
         'NAME': 'equalborders',
         'USER': 'xzhang',
         'PASSWORD': '',
-        'HOST': '*',
-        'PORT': '',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 

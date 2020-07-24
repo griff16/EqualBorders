@@ -11,11 +11,14 @@ class summaryDashboardView(ListView):
 # this is about page
 class summaryDashboardAboutView(ListView):
     template_name = "about.html"
+    model = Post
 
 # this is Schools page
 class summaryDashboardSchoolsView(ListView):
     template_name = "schools.html"
+    model = Post
 
 # this is News page
 class summaryDashboardNewsView(ListView):
     template_name = "news.html"
+    model = Post
