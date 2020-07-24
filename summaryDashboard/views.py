@@ -1,18 +1,21 @@
 from django.http import HttpResponse
-from django.views.generic import TemplateView
+from django.views.generic import ListView
+from .models import Post
 
-
-class summaryDashboardView(TemplateView):
+# this is home page
+class summaryDashboardView(ListView):
     template_name = "summaryDashboard.html"
+    model = Post
+    context_object_name = 'newsFeeds'
 
-
-class summaryDashboardAboutView(TemplateView):
+# this is about page
+class summaryDashboardAboutView(ListView):
     template_name = "about.html"
 
-
-class summaryDashboardSchoolsView(TemplateView):
+# this is Schools page
+class summaryDashboardSchoolsView(ListView):
     template_name = "schools.html"
 
-
-class summaryDashboardNewsView(TemplateView):
+# this is News page
+class summaryDashboardNewsView(ListView):
     template_name = "news.html"
