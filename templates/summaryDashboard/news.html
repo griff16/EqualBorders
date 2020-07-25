@@ -2,6 +2,26 @@
 
 {% block content %}
 
-<h1>This is news page</h1>
+<div class="container">
+    {% for feed in newsFeeds %}
+    <div class="col s12">
+        <h5 class="header">{{feed.title}}</h5>
+        <div class="card horizontal scroll-card">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/190/nature/6">
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>{{feed.body}}</p>
+                </div>
+                <div class="card-action">
+                    <a href={{feed.link}}>View the Source</a>
+                </div>
+            </div>
+        </div>
+    </div></br>
+    {% endfor %}
+
+</div>
 
 {% endblock %}

@@ -2,22 +2,6 @@
 
 {% block content %}
 
-<!-- <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-        <br><br>
-        <h1 class="header center orange-text">Starter Template</h1>
-        <div class="row center">
-            <h5 class="header col s12 light">A modern responsive front-end framework based on
-                Material Design</h5>
-        </div>
-        <div class="row center">
-            <a href="http://materializecss.com/getting-started.html" id="download-button"
-                class="btn-large waves-effect waves-light orange">Get Started</a>
-        </div>
-        <br><br>
-
-    </div>
-</div> -->
 
 <div class="section">
     <!--   Icon Section   -->
@@ -55,23 +39,21 @@
             </div>
         </div>
 
-        <!-- news card -->
-        <div class="col s12 m4">
-            <div class="card blue-grey darken-1 hoverable scroll-card">
-                <div class="card-content white-text">
-                    <span class="card-title">News related to schools</span>
-                    <ul>
-                        {% for feed in newsFeeds %}
-                            <li>{{ feed.title }}</li>
-                        {% endfor %}
-                    </ul>
-
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
+        <!-- news section -->
+        <div class="col s12 m4 container scroll-card">
+            <a href={% url 'sumDashNews' %}>
+                <h5 class="blue-grey-text darken-4">News related to schools</h5></a>
+            <ul class="collapsible popout" data-collapsible="accordion">
+                {% for feed in newsFeeds %}
+                    <li>
+                        <div class="collapsible-header">
+                            <i class="material-icons">filter_drama</i>{{ feed.title }}
+                        </div>
+                        <div class="collapsible-body truncate"><span>{{ feed.body }}</span></div>
+                        <a href={{ feed.link }}>View The Source</a>
+                    </li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
 </div>

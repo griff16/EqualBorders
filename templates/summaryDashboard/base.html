@@ -11,14 +11,19 @@
     <link href="{% static 'css/base.css' %}" rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    {% comment %} script {% endcomment %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/base.js' %}" ></script>
+    {% comment %} script end {% endcomment %}
 
     <!-- mapbox api -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
-    
-    <!-- google adsense -->
-    <script data-ad-client="ca-pub-4687616113437336" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
-
+    {% comment %} <script data-ad-client="ca-pub-4687616113437336" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>  {% endcomment %}
 </head>
 
 <body>
@@ -54,41 +59,24 @@
                     <h5 class="white-text">Equal Borders</h5>
                     <p class="grey-text text-lighten-4">
                         We are a team of college students working on
-                        this project like it's our full time job. Any amount would help support and
-                        continue development on this project and is greatly appreciated.</p>
+                        this project like it's our full time job. </p>
                 </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Info</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-                <div class="col l3 s12">
+                <div class="col l6 s12">
                     <h5 class="white-text">Contact Us</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
-                    </ul>
+                    <p>
+                        <i class="material-icons">email</i>EMAIL: equalborders@gmail.com</br>
+                        <i class="material-icons">people</i>ADDRESS: 47 W 13th St, New York,</br>NY 10011, USA
+                    </P>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
             <div class="container">
-                Made by <a class="orange-text text-lighten-3"
+                Made with <a class="orange-text text-lighten-3"
                     href="http://materializecss.com">Materialize</a>
             </div>
         </div>
     </footer>
-
-    <!-- Materialize script start -->
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- Materialize script end -->
 
 </body>
 

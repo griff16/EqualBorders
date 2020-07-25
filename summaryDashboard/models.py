@@ -4,6 +4,8 @@ from django.db import models
 class Post(models.Model):
     title = models.CharField(max_length=200)
     author = models.ForeignKey('auth.User', on_delete = models.CASCADE)
+    date = models.DateTimeField(default=None, blank=True, null=True)
+    link = models.TextField(default=None, blank=True, null=True)
     body = models.TextField()
 
     def __str__(self):
