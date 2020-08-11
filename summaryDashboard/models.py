@@ -10,3 +10,13 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+# Table for colleges
+class College(models.Model):
+    code = models.CharField(max_length=200)
+    name = models.CharField(max_length=200)
+    link = models.TextField(default=None, blank=True, null=True)
+
+    def __str__(self):
+        return self.name
+

@@ -6,4 +6,5 @@ urlpatterns = [
     path('about/', summaryDashboardAboutView.as_view(), name='sumDashAbout'),
     path('schools/', summaryDashboardSchoolsView.as_view(), name='sumDashSchools'),
     path('news/', summaryDashboardNewsView.as_view(), name='sumDashNews'),
+    # path('upload/', views., name='sumDashNews'),
 ]
