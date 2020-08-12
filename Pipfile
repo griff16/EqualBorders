@@ -12,6 +12,8 @@ whitenoise = "==4.1.4"
 psycopg2 = "*"
 dj-database-url = "*"
 pylint-django = "*"
+django-extensions = "*"
+tqdm = "*"
 
 [requires]
 python_version = "3.7"

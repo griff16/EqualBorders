@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',  # new
     'summaryDashboard.apps.SummarydashboardConfig',  # new
+    'django_extensions',  # new
 ]
 
 MIDDLEWARE = [

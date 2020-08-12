@@ -18,5 +18,6 @@ class College(models.Model):
     link = models.TextField(default=None, blank=True, null=True)
 
     def __str__(self):
-        return self.name
+        return self.name + '  , ' + self.code + '  , ' + str(self.link)
+
 
