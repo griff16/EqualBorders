@@ -21,8 +21,8 @@ class summaryDashboardAboutView(ListView):
 # this is Schools page
 class summaryDashboardSchoolsView(ListView):
     template_name = "schools.html"
-    model = Post
-    context_object_name = 'newsFeeds'
+    model = College
+    context_object_name = 'schools'
 
 # this is News page
 class summaryDashboardNewsView(ListView):

@@ -1,7 +1,27 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div class="container">
+    <table class="highlight">
+        <thead>
+            <tr>
+                <th>Country Code</th>
+                <th>School Name</th>
+                <th>School Link</th>
+            </tr>
+        </thead>
 
-<h1>This is schools page</h1>
+        <tbody>
 
+            {% for school in schools %}
+            <tr>
+                <td>{{ school.code }}</td>
+                <td>{{ school.name }}</td>
+                <td><a href={{ school.link }}>{{ school.link }}</a></td>
+            </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+</div>
 {% endblock %}
