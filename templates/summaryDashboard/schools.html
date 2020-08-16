@@ -2,26 +2,33 @@
 
 {% block content %}
 <div class="container">
-    <table class="highlight">
-        <thead>
-            <tr>
-                <th>Country Code</th>
-                <th>School Name</th>
-                <th>School Link</th>
-            </tr>
-        </thead>
 
-        <tbody>
+    <form class="col s12" action="{% url 'sumDashSchools' %}" method='get'>
+        <div class="input-field col s6">
+            <input name='q' type='text' placeholder="Type in School Name or Country Code" class="validate">
+        </div>
+    </form>
 
-            {% for school in schools %}
-            <tr>
-                <td>{{ school.code }}</td>
-                <td>{{ school.name }}</td>
-                <td><a href={{ school.link }}>{{ school.link }}</a></td>
-            </tr>
-            {% endfor %}
+    <div class="result row">
+        <table class="highlight">
+            <thead>
+                <tr>
+                    <th>Country Code</th>
+                    <th>School Name</th>
+                    <th>School Link</th>
+                </tr>
+            </thead>
 
-        </tbody>
-    </table>
+            <tbody>
+                {% for school in schools %}
+                <tr>
+                    <td>{{ school.code }}</td>
+                    <td>{{ school.name }}</td>
+                    <td><a href={{ school.link }}>{{ school.link }}</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </div>
 {% endblock %}
