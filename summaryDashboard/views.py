@@ -29,7 +29,7 @@ class summaryDashboardSchoolsView(ListView):
 
     def get_queryset(self):
         query = 'None' if self.request.GET.get('q') is None else self.request.GET.get('q')
-        query_set = College.objects.filter(Q(name__icontains=query) | Q(code__icontains=query))
+        query_set = College.objects.filter(Q(name__icontains=query) | Q(code__icontains=query) | Q(link__icontains=query))
         
         return query_set
     
